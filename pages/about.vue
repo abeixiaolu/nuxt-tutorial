@@ -22,11 +22,13 @@ useHead({
   script: [{ innerHTML: "console.log('Hello world')" }],
 });
 const title = "About";
+
+const counter = useState("counter");
 </script>
 
 <template>
   <div>
-    <h1 class="animate__animated animate__bounce">About</h1>
+    <h1 class="animate__animated animate__bounce">About {{ counter }}</h1>
     <div class="grid grid-cols-3 gap-4">
       <p>
         Nuxt

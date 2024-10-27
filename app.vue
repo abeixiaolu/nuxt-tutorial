@@ -1,3 +1,9 @@
+<script setup lang="ts">
+const websiteStore = useWebsiteStore();
+
+await callOnce(websiteStore.fetch);
+</script>
+
 <template>
   <div>
     <NuxtLayout>

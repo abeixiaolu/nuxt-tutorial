@@ -14,6 +14,7 @@ const { data } = await useAsyncData("hello", () => $fetch("/api/hello"));
   <div>
     <p>{{ data?.message }}</p>
     <img src="~/assets/xiaolu.jpg" alt="beautiful girl" width="600px" />
+    <Counter />
   </div>
 </template>
 

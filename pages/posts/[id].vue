@@ -12,10 +12,14 @@ useSeoMeta({
   description: "Posts",
   ogDescription: "Posts",
 });
+
+const website = useWebsiteStore();
 </script>
 
 <template>
-  <div>
+  <div class="text-cyan-600">
     <h1>Posts {{ route.params.id }}</h1>
+    <p class="text-cyan-600">{{ website.name }}</p>
+    <p class="text-cyan-600">{{ website.description }}</p>
   </div>
 </template>
