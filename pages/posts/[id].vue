@@ -1,14 +1,17 @@
 <script setup lang="ts">
 definePageMeta({
-  validate: (params) => {
-    if (/^\d+$/.test(params.id)) return true;
-    return {
-      statusCode: 404,
-      statusMessage: "Post not found",
-    };
+  validate: ({ params }) => {
+    return /^\d+$/.test(params.id as string);
   },
 });
 const route = useRoute();
+
+useSeoMeta({
+  title: "Posts",
+  ogTitle: "Posts",
+  description: "Posts",
+  ogDescription: "Posts",
+});
 </script>
 
 <template>
