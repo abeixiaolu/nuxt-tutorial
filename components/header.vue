@@ -12,8 +12,9 @@ const next = computed(() => "/albums/" + (id.value + 1));
         <li><NuxtLink to="/">Home</NuxtLink></li>
         <li><NuxtLink to="/about">About</NuxtLink></li>
         <li><NuxtLink to="/posts/1">Post 1</NuxtLink></li>
-        <li><NuxtLink to="/posts/2">Post 2</NuxtLink></li>
+        <li><NuxtLink to="/albums/2">Album 2</NuxtLink></li>
         <li><NuxtLink to="/dynamic-title">Dynamic Title</NuxtLink></li>
+        <li><NuxtLink to="/external">External</NuxtLink></li>
       </ul>
     </nav>
     <div v-if="$route.params.id">

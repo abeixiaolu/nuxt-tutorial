@@ -8,7 +8,7 @@ useHead({
 </script>
 
 <template>
-  <div>
+  <div class="p-4">
     <Header />
     <slot />
     <Footer />

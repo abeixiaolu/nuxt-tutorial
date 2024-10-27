@@ -4,11 +4,15 @@
 
 // Caution: Dynamic imports are not server-side compatible
 // import('~/assets/css/first.scss')
+
+// const { data } = useFetch("/api/hello");
+// ===
+const { data } = await useAsyncData("hello", () => $fetch("/api/hello"));
 </script>
 
 <template>
   <div>
-    <p>This is an auto-imported component</p>
+    <p>{{ data?.message }}</p>
     <img src="~/assets/xiaolu.jpg" alt="beautiful girl" width="600px" />
   </div>
 </template>
