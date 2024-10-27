@@ -9,6 +9,10 @@
 //   ],
 // });
 
+definePageMeta({
+  pageTransition: { name: "rotate" },
+});
+
 useHead({
   title: "My App",
   meta: [{ name: "description", content: "My amazing site." }],
@@ -22,14 +26,11 @@ const title = "About";
 
 <template>
   <div>
-    <Head>
-      <Title>{{ title }}</Title>
-      <Meta name="description" :content="title" />
-      <Style
-        type="text/css"
-        children="body { background-color: green; }"
-      ></Style>
-    </Head>
     <h1 class="animate__animated animate__bounce">About</h1>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. In cupiditate
+      velit, minus illo eligendi expedita quidem labore magni dolore sit
+      repudiandae iure commodi ex! Deserunt perspiciatis aliquid at quod minus?
+    </p>
   </div>
 </template>

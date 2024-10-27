@@ -11,8 +11,15 @@ export default defineNuxtConfig({
       },
     },
   },
+  experimental: {
+    viewTransition: true,
+  },
   css: ["~/assets/css/global.css"],
   app: {
+    pageTransition: {
+      name: "page",
+      mode: "out-in",
+    },
     head: {
       // link: [
       //   {
